@@ -1,0 +1,109 @@
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+  }
+
+#nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid rgba(54, 53, 53, 0.52);
+  overflow: hidden;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: 700;
+  color: blue;
+  margin-left: 5%;
+}
+
+#nav-menu{
+  width: 55%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+#nav-menu>li>a:hover{
+  color: rgba(246, 93, 4, 0.852);
+  font-weight: 600;
+}
+
+#nav-menu>li>a{
+  text-decoration: none;
+  color: #1e00ff;
+  font-weight: 600;
+}
+
+.side-menu{
+  display: none;
+}
+
+.hamberger{
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.cover{
+  margin-top: 60px;
+  border: 1px solid black;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://s42137.pcdn.co/wp-content/uploads/2022/10/how-can-technology-design-be-made-more-inclusive.jpeg.optimal.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-position: center; */
+}
+
+.cover>img{
+  width: 100%;
+  height: 100%;
+}
+
+.text-me{
+  position: absolute;
+  top: 40%;
+  bottom: 50%;
+  left: 5%;
+  max-width: 400px;
+}
+
+.text-me>p{
+  font-size: 40px;
+  font-weight: 700;
+  color: #009EFF;
+}
+
+.text-me>h1{
+  font-size: 60px;
+  color: #00FFF6;
+}
+
+
+@media screen and (max-width: 800px) {
+  #nav{
+    display: none;
+  }
+  .side-menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgba(54, 53, 53, 0.52);
+    overflow: hidden;
+  }
+}
