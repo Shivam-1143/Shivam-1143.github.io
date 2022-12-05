@@ -14,7 +14,8 @@
   align-items: center;
   background-color: white;
   border-bottom: 1px solid rgba(54, 53, 53, 0.52);
-  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  z-index: 100;
 }
 
 .logo{
@@ -22,14 +23,16 @@
   font-weight: 700;
   color: blue;
   margin-left: 5%;
+  font-family: 'Dancing Script', cursive;
+  transform: rotate(-5deg);
 }
 
 #nav-menu{
-  width: 55%;
+  width: 50%;
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #nav-menu>li>a:hover{
@@ -40,7 +43,7 @@
 #nav-menu>li>a{
   text-decoration: none;
   color: #1e00ff;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .side-menu{
@@ -61,8 +64,6 @@
   background-image: url(https://s42137.pcdn.co/wp-content/uploads/2022/10/how-can-technology-design-be-made-more-inclusive.jpeg.optimal.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* background-position: center; */
 }
 
 .cover>img{
@@ -72,23 +73,98 @@
 
 .text-me{
   position: absolute;
-  top: 40%;
+  top: 30%;
   bottom: 50%;
   left: 5%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .text-me>p{
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
   color: #009EFF;
 }
 
 .text-me>h1{
-  font-size: 60px;
+  font-size: 70px;
   color: #00FFF6;
 }
 
+#resume{
+  width: 80px;
+  padding: 10px 30px;
+  border: 2px solid white;
+  margin-top: 20px;
+}
+
+#resume>a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.heading{
+  font-size: 70px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 80px;
+}
+
+#about{
+  margin: auto;
+  background-color: #009dff31;
+}
+
+.about-me{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photo{
+  width: auto;
+}
+
+.photo>img{
+  border: 1px solid rgb(0, 225, 255) ;
+  border-radius: 150px;
+  margin: 50px 0px 50px;
+}
+
+.summary{
+  width: 50%;
+  font-size: 25px;
+}
+
+#skills{
+  margin-bottom: -100px;
+}
+
+.tech-skills{
+  text-align: center;
+  font-size: 25px;
+}
+
+.tech-skills>img{
+  width: 200px;
+  height: 150px;
+  margin: 50px;
+}
+
+.project-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.project-section > div{
+  width: 30%;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+}
 
 @media screen and (max-width: 800px) {
   #nav{
@@ -105,5 +181,6 @@
     background-color: white;
     border-bottom: 1px solid rgba(54, 53, 53, 0.52);
     overflow: hidden;
+    z-index: 100;
   }
 }
