@@ -153,17 +153,63 @@
   margin: 50px;
 }
 
-.project-section{
+.project-container{
+  width: 90%;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 30px;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-.project-section > div{
+.project-section{
   width: 30%;
-  height: 500px;
-  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 16px;
+}
+.cover-page{
+  height: 300px;
+  cursor: pointer;
+}
+
+.cover-page>img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.project-desc{
+  width: 100%;
+}
+
+.project-desc>h1{
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.project-desc>p{
+  font-size: 22px;
+  text-align: left;
+}
+.project-desc>.tech-stack{
+  text-align: left;
+}
+.project-desc>.tech-stack>img{
+  width: 50px;
+  height: 50px; 
+}
+.project-desc>.project-btn{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+.project-desc>.project-btn>button{
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
 }
 
 @media screen and (max-width: 800px) {
