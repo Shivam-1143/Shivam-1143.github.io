@@ -154,7 +154,7 @@
 }
 
 .project-container{
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: flex;
   gap: 20px;
@@ -166,6 +166,8 @@
   width: 30%;
   text-align: center;
   padding: 16px;
+  gap: 20px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .cover-page{
   height: 300px;
@@ -175,7 +177,6 @@
 .cover-page>img{
   width: 100%;
   height: 100%;
-
 }
 
 .project-desc{
@@ -188,9 +189,20 @@
 }
 
 .project-desc>p{
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
 }
+.project-desc>h2{
+  font-size: 20px;
+  text-align: left;
+  line-height: 50px;
+}
+.project-desc>ul{
+  font-size: 18px;
+  text-align: left;
+  padding-left: 20px;
+}
+
 .project-desc>.tech-stack{
   text-align: left;
 }
@@ -212,6 +224,57 @@
   color: white;
 }
 
+.contact-section{
+  background-color: #009dff31;
+}
+
+.email-phone-icon{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  /* margin-top: 50px; */
+  padding-top: 50px;
+}
+
+.email-phone-icon>div>img{
+  width: 35px;
+  margin-right: 20px; 
+}
+
+.contact-section>div>a>img{
+  width: 50px;
+  height: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+
+.email-phone-icon>div>span{
+  position: relative;
+  top: -15px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.contact-logo{
+  width: 15%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+
+}
+
+.border{
+  border: 1px solid rgb(0, 225, 255) ;  
+  margin-top: 50px;
+}
+
+.disclaimer{
+  text-align: center;
+  line-height: 50px;
+}
+
 @media screen and (max-width: 800px) {
   #nav{
     display: none;
@@ -225,7 +288,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-bottom: 1px solid rgba(54, 53, 53, 0.52);
+    border-bottom: 1px solid rgba(170, 168, 168, 0);
     overflow: hidden;
     z-index: 100;
   }
