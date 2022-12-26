@@ -5,6 +5,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500&family=Dancing+Script&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 </head>
 <body>
 
@@ -141,15 +148,31 @@
           <img src="./images/JavaScript-Logo.png" alt="js">
         </div>
         <div class="project-btn">
-          <button class="git-btn">Github</button>
-          <button class="live-btn">Go Live</button>
+          <button class="git-btn"><a href="https://github.com/nitya-nb/E-commerce-Website-Clone" style="color: white; text-decoration: none;" target="_blank">Github</a></button>
+          <button class="live-btn"><a href="https://verdant-biscotti-1680f9.netlify.app/" style="color: white; text-decoration: none;" target="_blank">Go Live</a></button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="heading">Github Stats</div>
+<div class="calendar git-calender">
+    
+</div>
+
+<div class="stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=Shivam-1143&theme=radical&hide_border=true" alt="streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Shivam-1143&show_icons=true&theme=radical" alt="">
+</div>
+<div class="base">
+  <img src="https://github-profile-trophy.vercel.app/?username=Shivam-1143&theme=radical" alt="stars">
+</div>
+<div class="base">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shivam-1143&layout=compact&theme=radical" alt="top-langs">  
+</div>
 <div id="contact">
-  <div class="heading">Contact</div>
+  <div class="heading">Contact me</div>
   <div class="border"></div> 
   <div class="contact-section">
       <div class="email-phone-icon">
@@ -165,7 +188,7 @@
       <div class="contact-logo">
         <a href="https://www.linkedin.com/in/shivam-sahu-254a26246/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="linkedIn"></a>
         <a href="https://github.com/Shivam-1143" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github"></a>
-        <a href="shivamsahu2019123@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="email"></a>
+        <a href="mailto:shivamsahu2019123@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="email"></a>
       </div>
       <div class="border"></div>
       <p class="disclaimer">Thank you 👋</p>
@@ -174,6 +197,9 @@
 
 </body>
 </html>
-
-<script src="./script.js"></script>
+<script>
+  GitHubCalendar(".calendar", "Shivam-1143");
+  // or enable responsive functionality
+  GitHubCalendar(".calendar", "Shivam-1143", { responsive: true });
+</script>
 
