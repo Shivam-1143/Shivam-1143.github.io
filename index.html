@@ -15,25 +15,35 @@
 </head>
 <body>
 
-  <div id="nav">
-    <div class="logo">Shivam Sahu</div>
-    <ul id="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://drive.google.com/file/d/1MSCCl56yvdN9Rxt01L_meHtuCv7KnMyF/view?usp=sharing" target="_blank">Resume</a></li>
-    </ul>
+<div id="nav">
+  <div class="logo">Shivam Sahu</div>
+  <ul id="nav-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://drive.google.com/file/d/1MSCCl56yvdN9Rxt01L_meHtuCv7KnMyF/view?usp=sharing" target="_blank">Resume</a></li>
+  </ul>
+
+  <div id="hamberger" class="ham-container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
   </div>
-  
-  <div class="side-menu">
-    <div class="logo">Shivam Sahu</div>
-    <div class="hamberger">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-    </div>
-  </div>
-  
+</div>
+
+<div id="side-menu-bar">
+  <ul id="side-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://drive.google.com/file/d/1MSCCl56yvdN9Rxt01L_meHtuCv7KnMyF/view?usp=sharing" target="_blank">Resume</a></li>
+  </ul>
+</div>
+
 <div class="cover" id="home">
   <div class="text-me">
     <p>Hello, I am 👋</p>
@@ -51,13 +61,11 @@
     </div>
     <div class="summary">
       <p>
-      Hello I am Shivam Sahu. I am from Jhansi (U.P.). I have completed the Diploma
-      in Electrical Engineering.</p>
-      <p>
-      
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit molestiae, ipsa quaerat
-      nesciunt reiciendis molestias iste incidunt. Doloremque nisi modi ullam quisquam 
-      quidem vel, culpa, temporibus quibusdam maxime voluptas soluta.
+        Hello I am Shivam Sahu. I am from Jhansi (U.P.). I have completed a diploma in Electrical Engineering. After that, I 
+        completed 1-year 'O' Level diploma in Software from NIELIT, Delhi where I got basic knowledge of Information technology,
+         web designing, and the programming language Python. After that, I worked for 1 year at the R G Institute of IT & Engg. 
+        Since I want to make a career in the IT field so I joined Masai School where I learned HTML, CSS, JavaScript, Java, MySQL, Hibernate, and Spring Boot also I learned some soft skills. Here 
+        I did 1000+ hours of coding and also participate in the group project. 
       </p>
     </div>
   </div>
@@ -148,7 +156,7 @@
           <img src="./images/JavaScript-Logo.png" alt="js">
         </div>
         <div class="project-btn">
-          <button class="git-btn"><a href="https://github.com/nitya-nb/E-commerce-Website-Clone" style="color: white; text-decoration: none;" target="_blank">Github</a></button>
+          <button class="git-btn"><a href="https://github.com/nitya-nb/E-commerce-Website-Clone/tree/main/day-5/final" style="color: white; text-decoration: none;" target="_blank">Github</a></button>
           <button class="live-btn"><a href="https://verdant-biscotti-1680f9.netlify.app/" style="color: white; text-decoration: none;" target="_blank">Go Live</a></button>
         </div>
       </div>
@@ -169,7 +177,7 @@
   <img src="https://github-profile-trophy.vercel.app/?username=Shivam-1143&theme=radical" alt="stars">
 </div>
 <div class="base">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shivam-1143&layout=compact&theme=radical" alt="top-langs">  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shivam-1143&theme=radical" alt="top-langs">  
 </div>
 <div id="contact">
   <div class="heading">Contact me</div>
@@ -201,5 +209,20 @@
   GitHubCalendar(".calendar", "Shivam-1143");
   // or enable responsive functionality
   GitHubCalendar(".calendar", "Shivam-1143", { responsive: true });
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+  document.getElementById("hamberger").addEventListener("click",openCloseMenu)
+  let hamberger = document.getElementById("hamberger")
+  let sideMenu = document.getElementById("side-menu-bar")
+  sideMenu.style.display = "none";
+  function openCloseMenu(){
+    if(sideMenu.style.display === "none"){
+      sideMenu.style.display = "block";
+    }else{
+      sideMenu.style.display = "none";
+    }
+  }
 </script>
 
