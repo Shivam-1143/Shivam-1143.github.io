@@ -150,8 +150,12 @@
 }
 
 .summary{
-  width: 50%;
-  font-size: 25px;
+  width: 65%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: justify;
 }
 
 #skills{
@@ -221,18 +225,20 @@
   padding-left: 20px;
 }
 
-.project-desc>.tech-stack{
+.project-desc>.tech-stack>p{
   text-align: left;
-}
-.project-desc>.tech-stack>img{
-  width: 50px;
-  height: 50px; 
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: teal;
 }
 .project-desc>.project-btn{
   display: flex;
   align-items: center;
   justify-content: left;
   gap: 20px;
+  
 }
 .project-desc>.project-btn>button{
   cursor: pointer;
@@ -241,7 +247,10 @@
   background-color: black;
   color: white;
 }
-
+.project-desc>.project-btn>button>a{
+  color: white;
+  text-decoration: none;
+}
 .contact-section{
   background-color: #009dff31;
 }

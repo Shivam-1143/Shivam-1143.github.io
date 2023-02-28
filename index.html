@@ -23,7 +23,7 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#project">Project</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="https://drive.google.com/file/d/1MSCCl56yvdN9Rxt01L_meHtuCv7KnMyF/view?usp=sharing" target="_blank">Resume</a></li>
+    <li><a href="https://drive.google.com/uc?export=download&id=1MSCCl56yvdN9Rxt01L_meHtuCv7KnMyF" target="_blank" download="Shivam-Sahu-Resume" onclick="handleClick()">Resume</a></li>
   </ul>
 
   <div id="hamberger" class="ham-container" onclick="myFunction(this)">
@@ -35,12 +35,12 @@
 
 <div id="side-menu-bar">
   <ul id="side-menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About me</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#project">Project</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="https://drive.google.com/file/d/1MSCCl56yvdN9Rxt01L_meHtuCv7KnMyF/view?usp=sharing" target="_blank">Resume</a></li>
+    <li><a href="#home" onclick="myFunction(hamberger,openCloseMenu())">Home</a></li>
+    <li><a href="#about" onclick="myFunction(hamberger,openCloseMenu())">About me</a></li>
+    <li><a href="#skills" onclick="myFunction(hamberger,openCloseMenu())">Skills</a></li>
+    <li><a href="#project" onclick="myFunction(hamberger,openCloseMenu())">Project</a></li>
+    <li><a href="#contact" onclick="myFunction(hamberger,openCloseMenu())">Contact</a></li>
+    <li><a href="https://drive.google.com/uc?export=download&id=1MSCCl56yvdN9Rxt01L_meHtuCv7KnMyF" target="_blank" download="Shivam-Sahu-Resume" onclick="handleClick()" onclick="myFunction(hamberger,openCloseMenu())">Resume</a></li>
   </ul>
 </div>
 
@@ -49,7 +49,7 @@
     <p>Hello, I am 👋</p>
     <h1>Java Backend Developer</h1>
     <div id="resume">
-      <a href="./resume/Shivam-Sahu-Resume.pdf" download>Resume</a>
+      <a href="https://drive.google.com/uc?export=download&id=1MSCCl56yvdN9Rxt01L_meHtuCv7KnMyF" target="_blank" download="Shivam-Sahu-Resume" onclick="handleClick()">Resume</a>
     </div>
   </div>
 </div>
@@ -57,15 +57,11 @@
   <div class="heading">About me</div>
   <div class="about-me">
     <div class="photo">
-      <img src="./images/photo.png" alt="">
+      <img src="./images/photo.png" alt="photo">
     </div>
     <div class="summary">
       <p>
-        Hello I am Shivam Sahu. I am from Jhansi (U.P.). I have completed a diploma in Electrical Engineering. After that, I 
-        completed 1-year 'O' Level diploma in Software from NIELIT, Delhi where I got basic knowledge of Information technology,
-         web designing, and the programming language Python. After that, I worked for 1 year at the R G Institute of IT & Engg. 
-        Since I want to make a career in the IT field so I joined Masai School where I learned HTML, CSS, JavaScript, Java, MySQL, Hibernate, and Spring Boot also I learned some soft skills. Here 
-        I did 1000+ hours of coding and also participate in the group project. 
+        Hello I am Shivam Sahu. I am from Jhansi (U.P.). I have completed a diploma in Electrical Engineering. After that, I completed 1-year 'O' Level diploma in Software from NIELIT, Delhi where I got basic knowledge of Information technology, web designing, and the programming language Python. After that, I worked for 1 year at the R G Institute of IT & Engg. Since I want to make a career in the IT field so I joined Masai School where I learned HTML, CSS, JavaScript, Java, MySQL, Hibernate, and Spring Boot also I learned some soft skills. Here I did 1000+ hours of coding and also participate in the group project.
       </p>
     </div>
   </div>
@@ -88,26 +84,47 @@
   <div class="project-container">
     <div class="project-section">
       <div class="cover-page">
-        <img src="./images/project1.png" alt="lovoda-cover">
+        <img src="./images/online vegetable sales app.jpg" alt="vegetable-app-cover">
       </div>
       <div class="project-desc">
-        <h1>Lovoda.com clone</h1>
-        <p>An E-Commerce website where selling specially woman's jewelry.<p>
+        <h1>Sabzi Bazar</h1>
+        <p>An E-Commerce java backend application for selling vegetables online.<p>
         <h2>Features</h2>
         <ul>
-          <li>User account signup/login</li>
-          <li>Responsible navbar, header, footer</li>
-          <li>Add to cart with whole functionality</li>
-          <li>Fully responsible website</li>
+          <li>Admin login and customer signup or login</li>
+          <li>Admin can manage vegetables</li>
+          <li>Add to cart and placed order functionality</li>
+          <li>Billing and feedback functionality</li>
         </ul>
         <div class="tech-stack">
-          <img src="./images/html.png" alt="html">
-          <img src="./images/css.png" alt="css">
-          <img src="./images/JavaScript-Logo.png" alt="js">
+          <p>Core Java | Spring Boot | lombok | MySQL</p>
         </div>
         <div class="project-btn">
-          <button class="git-btn">Github</button>
-          <button class="live-btn">Go Live</button>
+          <button class="git-btn"><a href="https://github.com/Shivam-1143/Demon-Island" target="_blank">Github</a></button>
+          <button class="live-btn"><a href="https://drive.google.com/file/d/1Jt00mxg6g2iQqEZlUbBLE38YRGqga-FH/view?usp=share_link" target="_blank">Go Live</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="project-section">
+      <div class="cover-page">
+        <img src="./images/Amusement park.jpg" alt="amusement-park-cover">
+      </div>
+      <div class="project-desc">
+        <h1>Demon Island</h1>
+        <p>A ticket booking app for amusement park activities by using Java, Spring boot etc.</p>
+        <h2>Features</h2>
+        <ul>
+          <li>Admin and customer signup/login</li>
+          <li>Admin can manage all activities and customer</li>
+          <li>User can view all activities and book tickets</li>
+          <li>User is able to cancel tickets</li>
+        </ul>
+        <div class="tech-stack">
+          <p>Core Java | Spring Boot | lombok | MySQL</p>
+        </div>
+        <div class="project-btn">
+          <button class="git-btn"><a href="https://github.com/Shivam-1143/majestic-vest-8576" target="_blank">Github</a></button>
+          <button class="live-btn"><a href="https://drive.google.com/file/d/1Jt00mxg6g2iQqEZlUbBLE38YRGqga-FH/view?usp=share_link" target="_blank">Go Live</a></button>
         </div>
       </div>
     </div>
@@ -126,38 +143,11 @@
           <li>Fully responsible website</li>
         </ul>
         <div class="tech-stack">
-          <img src="./images/html.png" alt="html">
-          <img src="./images/css.png" alt="css">
-          <img src="./images/JavaScript-Logo.png" alt="js">
+          <p>HTML | css (cascading stylesheet) | JavaScript</p>
         </div>
         <div class="project-btn">
-          <button class="git-btn">Github</button>
-          <button class="live-btn">Go Live</button>
-        </div>
-      </div>
-    </div>
-    <div class="project-section">
-      <div class="cover-page">
-        <img src="./images/project1.png" alt="lovoda-cover">
-      </div>
-      <div class="project-desc">
-        <h1>Lovoda.com</h1>
-        <p>An E-Commerce website where selling specially woman's jewelry.</p>
-        <h2>Features</h2>
-        <ul>
-          <li>User account signup/login</li>
-          <li>Responsible navbar, header, footer</li>
-          <li>Add to cart with whole functionality</li>
-          <li>Fully responsible website</li>
-        </ul>
-        <div class="tech-stack">
-          <img src="./images/html.png" alt="html">
-          <img src="./images/css.png" alt="css">
-          <img src="./images/JavaScript-Logo.png" alt="js">
-        </div>
-        <div class="project-btn">
-          <button class="git-btn"><a href="https://github.com/nitya-nb/E-commerce-Website-Clone/tree/main/day-5/final" style="color: white; text-decoration: none;" target="_blank">Github</a></button>
-          <button class="live-btn"><a href="https://verdant-biscotti-1680f9.netlify.app/" style="color: white; text-decoration: none;" target="_blank">Go Live</a></button>
+          <button class="git-btn"><a href="https://github.com/nitya-nb/E-commerce-Website-Clone/tree/main/day-5/final" target="_blank">Github</a></button>
+          <button class="live-btn"><a href="https://verdant-biscotti-1680f9.netlify.app/" target="_blank">Go Live</a></button>
         </div>
       </div>
     </div>
@@ -209,12 +199,13 @@
   GitHubCalendar(".calendar", "Shivam-1143");
   // or enable responsive functionality
   GitHubCalendar(".calendar", "Shivam-1143", { responsive: true });
+  let hamberger = document.getElementById("hamberger")
   function myFunction(x) {
     x.classList.toggle("change");
   }
 
   document.getElementById("hamberger").addEventListener("click",openCloseMenu)
-  let hamberger = document.getElementById("hamberger")
+  
   let sideMenu = document.getElementById("side-menu-bar")
   sideMenu.style.display = "none";
   function openCloseMenu(){
@@ -224,5 +215,17 @@
       sideMenu.style.display = "none";
     }
   }
+
+  function handleClick(){
+   window.open('https://drive.google.com/file/d/1MSCCl56yvdN9Rxt01L_meHtuCv7KnMyF/view?usp=sharing','_blank')
+  }
+
+  // function closeMenuFunc(){
+  //   // let sidelist = document.getElementById("side-menu")
+  //   // sideMenu.style.display="none";
+  //   openCloseMenu();
+  //   myFunction(this);
+  // }
+
 </script>
 
