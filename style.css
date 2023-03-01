@@ -145,17 +145,20 @@
 
 .photo>img{
   border: 1px solid rgb(0, 225, 255) ;
-  border-radius: 150px;
-  margin: 50px 0px 50px;
+  border-radius: 200px;
+  margin: 50px 0px 50px 40px;
+  width: 60%;
 }
 
 .summary{
-  width: 65%;
+  width: 60%;
   height: auto;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 20px;
   text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #skills{
